@@ -1,0 +1,12 @@
+﻿.git
+.github
+node_modules
+.env
+.env.*
+!.env.example
+.npm-cache
+.preview-chrome
+.preview-mobile
+preview-*.png
+.prepare.cjs
+tests

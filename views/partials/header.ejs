@@ -1,0 +1,23 @@
+      <header id="top" class="topbar">
+        <div class="container nav-wrap">
+          <a href="/" class="brand" aria-label="M-Enginuity home">
+            <img class="brand-logo" src="https://menginuity.co.ke/wp-content/uploads/2021/07/menginuity-logo.png" alt="M-Enginuity Tech & Trading Ltd" />
+          </a>
+          <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+            <a href="/" <%= activePage === 'home' ? 'aria-current="page"' : '' %>>Home</a>
+            <a href="/about/" <%= activePage === 'about' ? 'aria-current="page"' : '' %>>About</a>
+            <a href="/services/" <%= activePage === 'services' ? 'aria-current="page"' : '' %>>Services</a>
+            <a href="/contacts/" <%= activePage === 'contacts' ? 'aria-current="page"' : '' %>>Contacts</a>
+          </nav>
+          <a class="btn btn-primary nav-cta" href="/contacts/">Request a quote</a>
+          <div class="site-options">
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to light mode" title="Switch to light mode">
+              <span class="theme-icon" aria-hidden="true">☼</span>
+            </button>
+            <button class="install-button" type="button" data-install-app hidden>Install app</button>
+          </div>
+          <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </header>

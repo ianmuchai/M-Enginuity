@@ -1,0 +1,35 @@
+<%- include('partials/head', { title, description }) %>
+<%- include('partials/header', { activePage }) %>
+      <main id="main-content">
+        <section class="page-banner service-banner">
+          <div class="container">
+            <p class="eyebrow"><a href="/services/">Services</a> <span aria-hidden="true">/</span> <%= title.replace(' | M-Enginuity', '') %></p>
+            <h1><%= title.replace(' | M-Enginuity', '') %></h1>
+            <p><%= summary %></p>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container service-detail-layout">
+            <img class="service-detail-image" src="<%= image %>" alt="<%= imageAlt %>" width="1024" height="683" decoding="async" fetchpriority="high" />
+            <div class="service-detail-copy">
+              <p class="eyebrow">Our capability</p>
+              <h2><%= summary %></h2>
+              <ul class="service-details service-detail-list">
+                <% details.forEach((detail) => { %><li><%= detail %></li><% }) %>
+              </ul>
+              <a class="btn btn-primary" href="/contacts/">Discuss your requirements</a>
+            </div>
+          </div>
+        </section>
+        <section class="section alt-section">
+          <div class="container">
+            <div class="section-head"><div><p class="eyebrow">More capabilities</p><h2>Explore our services</h2></div></div>
+            <div class="card-grid two-up">
+              <% services.filter((item) => item.slug !== slug).forEach((service, index) => { %>
+                <%- include('partials/service-card', { service, index }) %>
+              <% }) %>
+            </div>
+          </div>
+        </section>
+      </main>
+<%- include('partials/footer') %>

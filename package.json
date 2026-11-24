@@ -1,0 +1,20 @@
+{
+  "name": "m-enginuity-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "M-Enginuity company website and quote inquiry API",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test",
+    "check": "node --check server.js && node --check public/script.js && node --check public/service-worker.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "nodemailer": "10.6.1"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}

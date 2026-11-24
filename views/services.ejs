@@ -1,0 +1,21 @@
+<%- include('partials/head', { title, description }) %>
+<%- include('partials/header', { activePage }) %>
+      <main id="main-content">
+        <section class="page-banner">
+          <div class="container">
+            <p class="eyebrow">Our services</p>
+            <h1>Engineering for industry</h1>
+            <p>Plant support, workshop machining, fabrication and equipment sourcing.</p>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="card-grid two-up">
+              <% services.forEach((service, index) => { %>
+                <%- include('partials/service-card', { service, index }) %>
+              <% }) %>
+            </div>
+          </div>
+        </section>
+      </main>
+<%- include('partials/footer') %>

@@ -1,0 +1,19 @@
+{
+  "id": "./",
+  "name": "M-Enginuity Tech & Trading Ltd",
+  "short_name": "M-Enginuity",
+  "description": "Plant services, machining, welding and fabrication in Athi River, Kenya.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07121f",
+  "theme_color": "#07121f",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

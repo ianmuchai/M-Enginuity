@@ -1,0 +1,35 @@
+<%- include('partials/head', { title, description }) %>
+<%- include('partials/header', { activePage }) %>
+      <main id="main-content">
+        <section class="page-banner">
+          <div class="container">
+            <p class="eyebrow">About M-Enginuity</p>
+            <h1>Engineering &amp; manufacturing support</h1>
+            <p>Based in Athi River, Kenya.</p>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container about-grid page-about-grid">
+            <div>
+              <p class="eyebrow">Who we are</p>
+              <h2>M-Enginuity Tech &amp; Trading Ltd</h2>
+            </div>
+            <div class="about-copy">
+              <p>M-Enginuity supports manufacturing and industrial operations with plant services, machining, welding, fabrication and quality spares.</p>
+              <p>Our team provides workshop and on-site support for equipment, components and plant infrastructure.</p>
+              <a class="btn btn-primary" href="/contacts/">Contact our team</a>
+            </div>
+          </div>
+        </section>
+        <section class="section alt-section">
+          <div class="container">
+            <div class="section-head"><div><p class="eyebrow">Our capabilities</p><h2>Practical support across the plant lifecycle</h2></div></div>
+            <div class="card-grid two-up">
+              <% services.forEach((service, index) => { %>
+                <%- include('partials/service-card', { service, index }) %>
+              <% }) %>
+            </div>
+          </div>
+        </section>
+      </main>
+<%- include('partials/footer') %>
