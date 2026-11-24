@@ -312,7 +312,7 @@ app.post('/api/inquiries', async (request, response) => {
 });
 
 // Serve only public assets; keep source and dependencies private.
-const publicAssets = new Set(['/styles.css', '/script.js', '/service-worker.js', '/manifest.webmanifest', '/icon.svg']);
+const publicAssets = new Set(['/styles.css', '/script.js', '/service-worker.js', '/manifest.webmanifest', '/icon.svg', '/images/engineering-collaboration.jpg', '/images/site-engineers.jpg', '/images/project-planning.jpg']);
 app.get([...publicAssets], (request, response) => {
   if (['/service-worker.js', '/script.js', '/styles.css'].includes(request.path)) response.setHeader('Cache-Control', 'no-cache');
   response.sendFile(path.join(root, 'public', request.path.slice(1)));

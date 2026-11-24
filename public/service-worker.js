@@ -1,4 +1,4 @@
-const CACHE_NAME = 'm-enginuity-shell-v14';
+const CACHE_NAME = 'm-enginuity-shell-v15';
 const APP_SHELL = [
   '/',
   '/about/',
@@ -8,8 +8,8 @@ const APP_SHELL = [
   '/welding-fabrication/',
   '/trading-services/',
   '/contacts/',
-  '/styles.css?v=14',
-  '/script.js?v=14',
+  '/styles.css?v=15',
+  '/script.js?v=15',
   '/manifest.webmanifest',
   '/icon.svg',
 ];

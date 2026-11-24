@@ -74,7 +74,7 @@ window.addEventListener('appinstalled', () => {
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js?v=14').catch((error) => {
+    navigator.serviceWorker.register('/service-worker.js?v=15').catch((error) => {
       console.error('Unable to register the offline app worker:', error);
     });
   });

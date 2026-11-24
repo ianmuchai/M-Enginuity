@@ -44,7 +44,7 @@ test('sitemap lists all pages and robots publishes its location', async () => {
   assert((await (await fetch(base + '/robots.txt')).text()).includes('Sitemap: https://menginuity.co.ke/sitemap.xml'));
 });
 test('only public assets can be downloaded', async () => {
-  for (const route of ['/styles.css?v=14', '/script.js?v=14', '/service-worker.js?v=14', '/manifest.webmanifest', '/icon.svg']) assert.equal((await fetch(base + route)).status, 200);
+  for (const route of ['/styles.css?v=15', '/script.js?v=15', '/service-worker.js?v=15', '/manifest.webmanifest', '/icon.svg']) assert.equal((await fetch(base + route)).status, 200);
   for (const route of ['/server.js', '/package.json', '/package-lock.json', '/.env', '/.env.example', '/vercel.json', '/views/home.ejs', '/node_modules/express/package.json', '/public/../server.js']) assert.equal((await fetch(base + route)).status, 404, route);
 });
 test('health check does not expose mail configuration', async () => {
